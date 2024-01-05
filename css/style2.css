@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+     'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+    align-items: center;
+}
+.container{
+    display: flex;
+}
+img{
+    height: 500px;
+    width: 300px;
+   border-radius: 3px;
+    transition: .5s;
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.intro{
+    height: 300px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    background: rgba(27, 27, 27, .5);
+    transition: .5s;
+    z-index: 999%;
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+    color: chartreuse;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 25px 0;
+    bottom: 120px;
+    background: 12px;
+    opacity: 40%;
+
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: :scale(1.1) rotate(-3deg);
+}
